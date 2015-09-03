@@ -13,4 +13,4 @@ test:
   override:
     - pwd
     - php pdo.php
-    - mysql 'CREATE DATABASE my_db; SHOW DATABASES;'
+    - mysql -e 'CREATE DATABASE my_db; SHOW DATABASES;'
