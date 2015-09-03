@@ -1,0 +1,15 @@
+machine:
+  php:
+    version: 5.6.5
+
+# dependencies:
+#   override:
+#     - cd BotHelper; composer install --prefer-source --no-interaction --no-dev
+#     - cd FacebookBotV2; composer install --prefer-source --no-interaction --no-dev
+#     - cd PantipBotV2; cp conf/pantip.test.circle.ini conf/pantip.test.ini
+#     - cd PantipBotV2/Test; mysql < spider_test_pantip.circle.sql
+
+test:
+  override:
+    - php -v
+    - mysql
