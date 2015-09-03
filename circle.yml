@@ -11,5 +11,4 @@ machine:
 
 test:
   override:
-    - php -v
-    - mysql
+    - php pdo.php
