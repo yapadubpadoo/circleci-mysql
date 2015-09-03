@@ -11,4 +11,5 @@ machine:
 
 test:
   override:
+    - pwd
     - php pdo.php
