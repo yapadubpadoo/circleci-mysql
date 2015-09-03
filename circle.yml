@@ -13,3 +13,4 @@ test:
   override:
     - pwd
     - php pdo.php
+    - mysql < 'SHOW DATABASES'
