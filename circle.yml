@@ -8,8 +8,8 @@ machine:
 dependencies:
   override:
     - mysql -e "CREATE DATABASE my_db; SHOW DATABASES;"
-    # - mysql -e "CREATE USER 'testuser'@'127.0.0.1' IDENTIFIED BY 'password';"
-    # - mysql -e "GRANT ALL ON *.* TO 'testuser'@'127.0.0.1';"
+    - mysql -e "CREATE USER 'testuser'@'127.0.0.1' IDENTIFIED BY 'password';"
+    - mysql -e "GRANT ALL ON *.* TO 'testuser'@'127.0.0.1';"
 #     - cd BotHelper; composer install --prefer-source --no-interaction --no-dev
 #     - cd FacebookBotV2; composer install --prefer-source --no-interaction --no-dev
 #     - cd PantipBotV2; cp conf/pantip.test.circle.ini conf/pantip.test.ini
